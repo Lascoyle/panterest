@@ -10,7 +10,21 @@ import './styles/app.scss';
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 // import $ from 'jquery';
-import  'jquery';
 import 'bootstrap';
 
 console.log('Hello Webpack Encore! Edit me in assets/app.js');
+
+//Display the selected file image in the input field for the pin edition/creation form
+function displayFileName() {
+
+    let selectedFile = document.getElementById('pin_imageFile_file').files[0].name;
+    console.log(selectedFile);
+
+    let customFileInput = document.querySelector(".custom-file-label");
+    console.log(customFileInput);
+    customFileInput.innerHTML = selectedFile;
+}
+
+addEventListener('change', displayFileName);
+
+
