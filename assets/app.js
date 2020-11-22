@@ -14,7 +14,7 @@ import 'bootstrap';
 
 console.log('Hello Webpack Encore! Edit me in assets/app.js');
 
-//Display the selected file image in the input field for the pin edition/creation form
+// Display the selected file image in the input field for the pin edition/creation form
 function displayFileName() {
 
     let selectedFile = document.getElementById('pin_imageFile_file').files[0].name;
