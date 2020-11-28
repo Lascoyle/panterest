@@ -27,9 +27,9 @@ function displayFileName() {
 
 addEventListener('change', displayFileName);
 
+// Animate pins when they are displayed on screen
 let delay = 0;
 let pins = document.getElementsByClassName('pin');
-console.log(pins)
 
 function slidePins() {
     for (let pin of pins) {
@@ -76,6 +76,34 @@ function slidePins() {
 }
 
 document.addEventListener("load", slidePins());
+
+//Manage the pin deletion
+let deletionLink = document.querySelector('.deletion-link');
+let pinDeleteForm = document.getElementById('pin-delete-form');
+
+deletionLink.addEventListener(
+    'click',
+    function(event){event.preventDefault()
+        & confirm('Are you sure you want to delete this pin?')
+        & pinDeleteForm.submit()
+    }
+)
+
+//Manage the logout-form submission
+let logoutLink = document.querySelector('.logout-link');
+let logoutForm = document.getElementById('logout-form');
+
+logoutLink.addEventListener(
+    'click',
+    function(event){event.preventDefault()
+        & confirm('Are you sure you want to logout?')
+        & logoutForm.submit()
+    }
+);
+
+
+
+
 
 
 

@@ -15,8 +15,13 @@
                 <a class="nav-link" href="#">Account</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ path('app_logout') }}">Logout</a>
+                <a class="nav-link logout-link" href="#">Logout</a>
               </li>
+
+              <form id="logout-form" action="{{ path('app_logout') }}" method="POST" style="display:none;">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token('logout') }}">
+              </form>
+
               <li class="nav-item">
                 <a class="nav-link">{{ app.user.fullName }}</a>
               </li>
