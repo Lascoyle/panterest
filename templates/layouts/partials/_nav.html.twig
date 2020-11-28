@@ -19,7 +19,7 @@
               </li>
 
               <form id="logout-form" action="{{ path('app_logout') }}" method="POST" style="display:none;">
-                <input type="hidden" name="csrf_token" value="{{ csrf_token('logout') }}">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('logout') }}">
               </form>
 
               <li class="nav-item">

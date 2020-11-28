@@ -77,17 +77,6 @@ function slidePins() {
 
 document.addEventListener("load", slidePins());
 
-//Manage the pin deletion
-let deletionLink = document.querySelector('.deletion-link');
-let pinDeleteForm = document.getElementById('pin-delete-form');
-
-deletionLink.addEventListener(
-    'click',
-    function(event){event.preventDefault()
-        & confirm('Are you sure you want to delete this pin?')
-        & pinDeleteForm.submit()
-    }
-)
 
 //Manage the logout-form submission
 let logoutLink = document.querySelector('.logout-link');
@@ -99,8 +88,19 @@ logoutLink.addEventListener(
         & confirm('Are you sure you want to logout?')
         & logoutForm.submit()
     }
-);
+    );
 
+//Manage the pin deletion
+let deletionLink = document.querySelector('.deletion-link');
+let pinDeleteForm = document.getElementById('pin-delete-form');
+
+deletionLink.addEventListener(
+    'click',
+    function(e){e.preventDefault()
+        & confirm('Are you sure you want to delete this pin?')
+        & pinDeleteForm.submit()
+    }
+)
 
 
 
