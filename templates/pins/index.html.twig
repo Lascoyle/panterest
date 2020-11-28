@@ -23,6 +23,14 @@
                             {% endif %}
                             <h2 class="h5 pl-3 pt-3"><a href="{{ path('app_pins_show', {id: pin.id}) }}" class="text-muted text-secondary text-decoration-none">{{ pin.title }}</a></h2>
                             <p class="pl-3 pb-3 text-muted"><small>Submitted by {{ pin.user.fullName }}</small></p>
+                            <!-- <div class="m-3">
+                                <a href="#" class="mb-3 btn btn-danger right w-100 deletion-link">Delete &times;</a>
+                            </div>
+
+                            <form id="pin-delete-form" action="{{ path('app_pins_delete', {id: pin.id}) }}" method="POST" style="display:none;">
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token('pin_deletion_' ~ pin.id) }}">
+                                <input type="hidden" name="_method" value="DELETE">
+                            </form> -->
                         </article>
                     </div>
                 {% endfor %}
