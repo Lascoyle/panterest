@@ -14,12 +14,12 @@
         <div class="col-md-6 mx-auto">
             <div class="form">
                 {{ form_start(registrationForm) }}
-                    <div class="row">
+                    <div class="row d-flex align-items-baseline">
                         <div class="col-md-6 ">
-                            {{ form_row(registrationForm.firstname) }}
+                            {{ form_row(registrationForm.firstName) }}
                         </div>
                         <div class="col-md-6">
-                            {{ form_row(registrationForm.lastname) }}
+                            {{ form_row(registrationForm.lastName) }}
                         </div>
                     </div>
                     {{ form_row(registrationForm.email) }}
