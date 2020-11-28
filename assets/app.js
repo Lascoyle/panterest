@@ -33,9 +33,8 @@ function slidePins() {
     console.log(pins)
 
     for (let pin of pins) {
-        delay = delay+100;
-        console.log(delay);
-        console.log(pin)
+        delay = delay+300;
+
         let pinDownKeyframes = new KeyframeEffect(
             pin,
             [
@@ -48,6 +47,32 @@ function slidePins() {
         let pinDownAnimation = new Animation(pinDownKeyframes, document.timeline);
 
         pinDownAnimation.play();
+
+        let pinFadeKeyframes = new KeyframeEffect(
+            pin,
+            [
+                { opacity: 0 },
+                { opacity: 1 },
+            ],
+            { delay: delay, duration: 800, fill: 'forwards' }
+        )
+
+        let pinFadeAnimation = new Animation(pinFadeKeyframes, document.timeline);
+
+        pinFadeAnimation.play();
+
+        let pinDisplayKeyframes = new KeyframeEffect(
+            pin,
+            [
+                { display: 'none' },
+                { display: 'block' },
+            ],
+            { delay: delay, duration: 800, fill: 'forwards' }
+        )
+
+        let pinDisplayAnimation = new Animation(pinDisplayKeyframes, document.timeline);
+
+        pinDisplayAnimation.play();
     }
 }
 
