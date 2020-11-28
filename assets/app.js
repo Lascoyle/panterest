@@ -28,13 +28,13 @@ function displayFileName() {
 addEventListener('change', displayFileName);
 
 let delay = 0;
-function slidePins() {
-    let pins = document.getElementsByClassName('pin');
-    console.log(pins)
+let pins = document.getElementsByClassName('pin');
+console.log(pins)
 
+function slidePins() {
     for (let pin of pins) {
         delay = delay+300;
-
+        pin.style.display = 'none';
         let pinDownKeyframes = new KeyframeEffect(
             pin,
             [
@@ -76,6 +76,10 @@ function slidePins() {
     }
 }
 
-slidePins();
+document.addEventListener("load", slidePins());
+
+
+
+
 
 
