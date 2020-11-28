@@ -34,7 +34,6 @@ console.log(pins)
 function slidePins() {
     for (let pin of pins) {
         delay = delay+300;
-        pin.style.display = 'none';
         let pinDownKeyframes = new KeyframeEffect(
             pin,
             [
