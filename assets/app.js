@@ -27,4 +27,30 @@ function displayFileName() {
 
 addEventListener('change', displayFileName);
 
+let delay = 0;
+function slidePins() {
+    let pins = document.getElementsByClassName('pin');
+    console.log(pins)
+
+    for (let pin of pins) {
+        delay = delay+100;
+        console.log(delay);
+        console.log(pin)
+        let pinDownKeyframes = new KeyframeEffect(
+            pin,
+            [
+                { transform: 'translateX(-25%)' },
+                { transform: 'translateX(0%)' }
+            ],
+            { delay: delay, duration: 800, fill: 'forwards' }
+        )
+
+        let pinDownAnimation = new Animation(pinDownKeyframes, document.timeline);
+
+        pinDownAnimation.play();
+    }
+}
+
+slidePins();
+
 
