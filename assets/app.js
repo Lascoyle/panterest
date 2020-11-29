@@ -12,8 +12,6 @@ import './styles/app.scss';
 // import $ from 'jquery';
 import 'bootstrap';
 
-console.log('Hello Webpack Encore! Edit me in assets/app.js');
-
 // Display the selected file image in the input field for the pin edition/creation form
 function displayFileName() {
 
@@ -82,26 +80,40 @@ document.addEventListener("load", slidePins());
 let logoutLink = document.querySelector('.logout-link');
 let logoutForm = document.getElementById('logout-form');
 
+function confirmLogout() {
+    if ( confirm('Are you sure you want to logout?')) {
+        logoutForm.submit();
+    }
+
+    else {
+        return;
+    }
+}
+
 if(logoutLink) {
     logoutLink.addEventListener(
     'click',
-    function(event){event.preventDefault()
-        & confirm('Are you sure you want to logout?')
-        & logoutForm.submit()
-    }
+    function(event){ event.preventDefault() & confirmLogout() }
 )}
 
 //Manage the pin deletion
 let deletionLink = document.querySelector('.deletion-link');
 let pinDeleteForm = document.getElementById('pin-delete-form');
 
+function confirmPinDeletion() {
+    if ( confirm('Are you sure you want to delete this pin?')) {
+        pinDeleteForm.submit();
+    }
+
+    else {
+        return;
+    }
+}
+
 if(deletionLink) {
     deletionLink.addEventListener(
     'click',
-    function(e){e.preventDefault()
-        & confirm('Are you sure you want to delete this pin?')
-        & pinDeleteForm.submit()
-    }
+    function(e){ e.preventDefault() & confirmPinDeletion() }
 )}
 
 
