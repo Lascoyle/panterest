@@ -9,16 +9,16 @@
         {% endblock %}
     </head>
     <body>
+        {{ include('layouts/partials/_nav.html.twig') }}
 
         {{ include('layouts/partials/_flash-messages.html.twig') }}
 
-        {{ include('layouts/partials/_nav.html.twig') }}
-
-        <main role="main" class="container">
+        <main role="main" class="container mt-5">
             {% block body %}{% endblock %}
         </main>
 
         {{ include('layouts/partials/_footer.html.twig') }}
+
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
