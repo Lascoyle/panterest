@@ -71,6 +71,11 @@ class User implements UserInterface
      */
     private $isVerified = false;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $agreeTerms;
+
     public function __construct()
     {
         $this->pins = new ArrayCollection();
@@ -226,6 +231,18 @@ class User implements UserInterface
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    public function getAgreeTerms(): ?bool
+    {
+        return $this->agreeTerms;
+    }
+
+    public function setAgreeTerms(bool $agreeTerms): self
+    {
+        $this->agreeTerms = $agreeTerms;
 
         return $this;
     }
