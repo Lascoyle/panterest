@@ -11,7 +11,7 @@
 
             <h2 class="h4 mt-4">{{ app.user.fullName }}</h2>
             <p class="">{{ app.user.email }}</p>
-            <small>Account created on <time datetime="{{ app.user.createdAt|date('d-m-Y') }}">{{ app.user.createdAt|date('d-m-Y') }} ({{ app.user.createdAt|ago }})</time></small>
+            <small>Account created on <time datetime="{{ app.user.createdAt|date('d-m-Y') }}">🕓 {{ app.user.createdAt|date('d-m-Y') }} ({{ app.user.createdAt|ago }})</time></small>
             <p>
                 <a href="{{ path('app_account_edit', {id: app.user.id}) }}">Edit Account</a> |
                 <a href="#">Change Password</a>
