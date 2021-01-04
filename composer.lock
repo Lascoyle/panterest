@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ee3607726ec4045ecbd557f5e4d04b0",
+    "content-hash": "79ce51b5eb7f7917dd15b74b0841e7b2",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -6562,16 +6562,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.10",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "aa8d71d287a42edac6e42e2d9ca4e7efa683a2ad"
+                "reference": "5bd67751d2e3f7d6f770c9154b8fbcb2aa05f7ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/aa8d71d287a42edac6e42e2d9ca4e7efa683a2ad",
-                "reference": "aa8d71d287a42edac6e42e2d9ca4e7efa683a2ad",
+                "url": "https://api.github.com/repos/symfony/string/zipball/5bd67751d2e3f7d6f770c9154b8fbcb2aa05f7ed",
+                "reference": "5bd67751d2e3f7d6f770c9154b8fbcb2aa05f7ed",
                 "shasum": ""
             },
             "require": {
@@ -6625,7 +6625,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v5.1.10"
+                "source": "https://github.com/symfony/string/tree/v5.2.1"
             },
             "funding": [
                 {
@@ -6641,7 +6641,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-05T07:09:10+00:00"
+            "time": "2020-12-05T07:33:16+00:00"
         },
         {
             "name": "symfony/templating",
