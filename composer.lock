@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70bacb9c1177c1bf23796f0633832216",
+    "content-hash": "eff6c583aa496332ee4ead48df315e12",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7393,7 +7393,7 @@
         },
         {
             "name": "symfony/web-link",
-            "version": "v5.1.8",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-link.git",
@@ -7460,7 +7460,7 @@
                 "push"
             ],
             "support": {
-                "source": "https://github.com/symfony/web-link/tree/v5.1.8"
+                "source": "https://github.com/symfony/web-link/tree/v5.2.1"
             },
             "funding": [
                 {
