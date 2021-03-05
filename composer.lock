@@ -7773,16 +7773,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.4",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560"
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a8aec1b2981ab66882a01cce36a49b6317dc3560",
-                "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6f990c19f91729de8b31e639d6e204ea59f19cf3",
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3",
                 "shasum": ""
             },
             "require": {
@@ -7811,7 +7811,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -7841,7 +7841,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2020-05-03T19:32:03+00:00"
+            "time": "2021-01-18T15:53:43+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -8360,20 +8360,20 @@
         },
         {
             "name": "theofidry/psysh-bundle",
-            "version": "4.3.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theofidry/PsyshBundle.git",
-                "reference": "2dc44466d2a1ddb900a1596983750c15fe56328c"
+                "reference": "c3d3807420961a0c70db3ff1b2527b7138ccf412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theofidry/PsyshBundle/zipball/2dc44466d2a1ddb900a1596983750c15fe56328c",
-                "reference": "2dc44466d2a1ddb900a1596983750c15fe56328c",
+                "url": "https://api.github.com/repos/theofidry/PsyshBundle/zipball/c3d3807420961a0c70db3ff1b2527b7138ccf412",
+                "reference": "c3d3807420961a0c70db3ff1b2527b7138ccf412",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3",
+                "php": ">=7.3",
                 "psy/psysh": "^0.10",
                 "symfony/error-handler": "^5.0|^4.4",
                 "symfony/expression-language": "^5.0|^4.4",
@@ -8422,7 +8422,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-03-26T20:01:29+00:00"
+            "time": "2021-02-02T12:16:43+00:00"
         }
     ],
     "aliases": [],
