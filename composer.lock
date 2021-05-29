@@ -8284,16 +8284,16 @@
         },
         {
             "name": "symfony/web-profiler-bundle",
-            "version": "v5.2.4",
+            "version": "v5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-profiler-bundle.git",
-                "reference": "4b28c24db64156ad892300be7fae1978bed075ce"
+                "reference": "68aea5b0ca1328c2a1ae3df04cce50302a5106f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/4b28c24db64156ad892300be7fae1978bed075ce",
-                "reference": "4b28c24db64156ad892300be7fae1978bed075ce",
+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/68aea5b0ca1328c2a1ae3df04cce50302a5106f9",
+                "reference": "68aea5b0ca1328c2a1ae3df04cce50302a5106f9",
                 "shasum": ""
             },
             "require": {
@@ -8355,7 +8355,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-28T22:06:19+00:00"
+            "time": "2021-05-11T14:36:09+00:00"
         },
         {
             "name": "theofidry/psysh-bundle",
