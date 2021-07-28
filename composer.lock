@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfdaf85bc243b87f403177b9e2b2d3ae",
+    "content-hash": "a905bc9c1b690da851c7fc07c9659d8a",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -7124,31 +7124,31 @@
         },
         {
             "name": "symfony/web-link",
-            "version": "v5.2.5",
+            "version": "v5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-link.git",
-                "reference": "118ef73c177a033955af1342ec54f08dd1bf6d8e"
+                "reference": "0075c9949c30a61d9b9e7483686d72d261480ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-link/zipball/118ef73c177a033955af1342ec54f08dd1bf6d8e",
-                "reference": "118ef73c177a033955af1342ec54f08dd1bf6d8e",
+                "url": "https://api.github.com/repos/symfony/web-link/zipball/0075c9949c30a61d9b9e7483686d72d261480ef1",
+                "reference": "0075c9949c30a61d9b9e7483686d72d261480ef1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "psr/link": "^1.0"
+                "psr/link": "^1.0",
+                "symfony/polyfill-php80": "^1.16"
             },
             "conflict": {
-                "symfony/http-kernel": "<4.4"
+                "symfony/http-kernel": "<5.3"
             },
             "provide": {
                 "psr/link-implementation": "1.0"
             },
             "require-dev": {
-                "symfony/http-foundation": "^4.4|^5.0",
-                "symfony/http-kernel": "^4.4|^5.0"
+                "symfony/http-kernel": "^5.3"
             },
             "suggest": {
                 "symfony/http-kernel": ""
@@ -7204,7 +7204,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-07T15:51:33+00:00"
+            "time": "2021-07-21T12:40:44+00:00"
         },
         {
             "name": "symfony/webpack-encore-bundle",
